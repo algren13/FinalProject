@@ -1,4 +1,4 @@
-# FinalProject
+# Final Cybersecurity Project
 ## Objectives:
 ### Act as both a pentester and SOC Analyst 
 
