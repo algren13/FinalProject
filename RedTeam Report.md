@@ -145,7 +145,8 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
       
   -  flag4{715dea6c055b9fe3337544932f2941ce}
     - **Exploit Used**
-      - Using Steven's password, escalation was achived.  Then using python, root was achived
+
+   - Using Steven's password, escalation was achived.  Then using python, root was achived
       allowing full access to all directories.  A find was performed, revealing a final flag file 
       in /root/flag4.txt
 
