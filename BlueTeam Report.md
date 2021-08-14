@@ -49,7 +49,7 @@ Traffic to these services should be carefully monitored. To this end, we have im
   - Vulnerability Mitigated: **Enumeration/Brute Force**
   - Reliability: High Reliability - By filtering on 400 and 500 error codes at a high rate will help to detect web server attacks.
 
-![Excessive HTTP Errors Alert](Images/ExcessiveHTTPErrors.png)
+![Excessive HTTP Errors Alert](Images/14ExcessiveHTTPErrors.png)
 
 
 #### HTTP Request Size Monitor Alert
