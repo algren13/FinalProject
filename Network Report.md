@@ -17,6 +17,16 @@ june11.dll
 4. Upload the file to [VirusTotal.com](https://www.virustotal.com/gui/). 
 5. What kind of malware is this classified as?
 Trojan Malware
+
+![Domain Name in Wireshark](Images/22domainname)
+
+
+![June 11.DLL](Images/23June11)
+
+
+![Total Virus](Images/25virustotal)
+
+
 ---
 
 ## Vulnerable Windows Machine
@@ -31,6 +41,11 @@ Trojan Malware
 3. What are the IP addresses used in the actual infection traffic?
 172.16.4.205, 185.243.115.84, 166.62.11.64 
 
+![Matthijs Devries](Images/26matthijsdevries.png)
+
+![Empty Gif](Images/27emptygif.png)
+
+![Top Talkers](Images/28toptalkers.png)
 
 ---
 
@@ -43,3 +58,7 @@ Trojan Malware
 
 2. Which torrent file did the user download?
     Betty_Boop_Rythm_on_the_Reservation.avi.torrent
+    
+    ![Elmer Blanco](Images/29elmerblanko.png)
+    
+    ![Torrent File](Images/30torrentfile.png)
