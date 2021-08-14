@@ -49,6 +49,9 @@ Traffic to these services should be carefully monitored. To this end, we have im
   - Vulnerability Mitigated: **Enumeration/Brute Force**
   - Reliability: High Reliability - By filtering on 400 and 500 error codes at a high rate will help to detect web server attacks.
 
+![Excessive HTTP Errors Alert](Images/ExcessiveHTTPErrors.png)
+
+
 #### HTTP Request Size Monitor Alert
 HTTP Request Size Monitor Alert is implemented as follows:
   - Metric: **WHEN sum() of http.request.bytes OVER all documents**
@@ -56,6 +59,8 @@ HTTP Request Size Monitor Alert is implemented as follows:
   - Vulnerability Mitigated: **Code injection in HTTP requests (XSS and CRLF) or DDOS**
   - Reliability: Medium Reliability.  Alert might create false positives.  
       It could be triggered by a large amount of legitimate HTTP traffic
+      
+![HTTP Request Size Monitor](Images/13HTTPRequestSizeMonitor.png)
 
 #### CPU Usage Monitor Alert
 CPU Usage Monitor Alert is implemented as follows:
@@ -65,4 +70,4 @@ CPU Usage Monitor Alert is implemented as follows:
   - Reliability: Highly Reliabile - Can also be used to judge 
     legitimate uses of resources to improve exisiting processes.
 
-
+![CPU Usage Monitor](Images/12CPUUsageMonitor.png)
