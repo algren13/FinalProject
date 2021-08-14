@@ -30,9 +30,9 @@ Not shown: 998 closed ports
 9200/tcp open  http    Elasticsearch REST API 7.6.1 (name: elk; cluster: elasticsearch; Lucene 8.4.0)\
 MAC Address: 4C:EB:42:D2:D5:D7 (Intel Corporate)\
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel\
-Nmap scan report for 192.168.1.105\
+**Nmap scan report for 192.168.1.105**/
 Host is up (0.00052s latency).\
-Not shown: 998 closed ports\
+Not shown: 998 closed ports
 
 **PORT   STATE SERVICE VERSION**\
 22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)\
@@ -117,10 +117,9 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 ![Flag 1](Images/3-2flag1serviceshtml.png)
 
 
-      flag2{fc3fd58dcdad9ab23faca6e9a36e581c}
+   - flag2{fc3fd58dcdad9ab23faca6e9a36e581c}
     - **Exploit Used**
       - Using the find command the 2nd flag was revealed to be in /var/www/
-      - _TODO: Include the command run_
         find / -iname flag*
         cd /var/www
         cat flag2.txt
@@ -128,24 +127,23 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 ![Flag 2](Images/3-5flag2.png)
       
       
-      flag3{afc01ab56b50591e7dccf93122770cd2}
+  -  flag3{afc01ab56b50591e7dccf93122770cd2}
     - **Exploit Used**
     Searching the /var/www/html directory revealed the wp-config.php file.  Searching that file
     revealed the root password for the MySQL database 'wordpress'.  Using the MySQL credentials
     allowed searching the tables 'wpcomments' and 'wpusers' which revealed a flag and two users hashes 
     respectively.  
     
-      - _TODO: Include the command run_
-      mysql -u root -p -h 127.0.0.1
-      use wordpress;
-      show tables
-      select * from wp_comments
-      select * from wp_users
+   mysql -u root -p -h 127.0.0.1
+   use wordpress;
+   show tables
+   select * from wp_comments
+   select * from wp_users
 
  ![Flag 3](Images/6flag3.png)
       
       
-      flag4{715dea6c055b9fe3337544932f2941ce}
+  -  flag4{715dea6c055b9fe3337544932f2941ce}
     - **Exploit Used**
       - Using Steven's password, escalation was achived.  Then using python, root was achived
       allowing full access to all directories.  A find was performed, revealing a final flag file 
