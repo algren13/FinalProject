@@ -158,4 +158,4 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
       cat flag4.txt
 
 
-![Flag 4](Images/9flag4)
+![Flag 4](Images/9flag4.png)
