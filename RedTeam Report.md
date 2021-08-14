@@ -68,6 +68,7 @@ Host is up (0.0000080s latency).\
 Not shown: 999 closed ports
 
 ![NMAP network scan] (images/1 NMAP network scan.png)
+
 ---
 
 ### This scan identifies the services below as potential points of entry:
