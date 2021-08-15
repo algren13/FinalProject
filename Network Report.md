@@ -18,13 +18,13 @@ june11.dll
 5. What kind of malware is this classified as?
 Trojan Malware
 
-![Domain Name in Wireshark](Images/22domainname)
+![Domain Name in Wireshark](Images/22domainname.png)
 
 
-![June 11.DLL](Images/23June11)
+![June 11.DLL](Images/23June11.png)
 
 
-![Total Virus](Images/25virustotal)
+![Total Virus](Images/25virustotal.png)
 
 
 ---
