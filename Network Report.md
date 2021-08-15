@@ -21,7 +21,7 @@ Trojan Malware
 ![Domain Name in Wireshark](Images/22domainname.png)
 
 
-![June 11.DLL](Images/23June11.png)
+![June 11.DLL](Images/23june11.png)
 
 
 ![Total Virus](Images/25virustotal.png)
